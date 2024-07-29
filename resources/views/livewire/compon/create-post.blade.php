@@ -1,3 +1,4 @@
 <div>
-    {{-- Do your work, then step back. --}}
+    <h1>Title: {{$title}}</h1>
+    <span>Author: {{$author}}</span>
 </div>

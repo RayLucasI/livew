@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 use App\Livewire\Quick\Counter;
+use App\Livewire\Compon\CreatePost;
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,4 +23,6 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/counter',Counter::class);
+
+Route::get('/createp',CreatePost::class);
 

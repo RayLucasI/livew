@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class CreatePost extends Component
 {
-    public $title = 'Post Titlexxx';
+    public $title = 'Post Title_x';
 
     public function render(){
         return view('livewire.compon.create-post')->with([

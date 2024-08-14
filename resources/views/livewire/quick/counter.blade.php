@@ -1,5 +1,5 @@
 <div>
-    <h1>Acumulado: {{$count}}
+    <h1>Acumuladox: {{$count}}
     <button wire:click="increment">+</button>
     <button wire:click="decrement">-</button>
 </div>

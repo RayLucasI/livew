@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Livewire\Quick\Counter;
 use App\Livewire\Compon\CreatePost;
+use App\Livewire\Compon\HelloWorld;
 
 Route::get('/', function () {
     return view('welcome');

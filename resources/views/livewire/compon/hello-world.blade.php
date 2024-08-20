@@ -1,9 +1,12 @@
 <div>
-    <div>The curren time es: {{ time() }}</div><br>
+    <input wire:model.live="name" type="text">
+    <div><input wire:model.live="loud" type="checkbox"></div>    
+    <select wire:model.live="greeting" multiple>
+        <option>Hello</option>
+        <option>Goodbye</option>
+        <option>Adios</option>                
+    </select>
 
-    <button wire:click="$refresh"
-            class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-        Button
-    </button>
-
+    <div>{{implode(', ',$greeting)}} {{$name}}@if ($loud) ! @endif</div>
+    
 </div>
